@@ -80,3 +80,44 @@ def hometown_info():
   return home_town_message
 # Call the function and print the result
 print('Exercise 4:', hometown_info())
+
+
+# Exercise 5: Iterating Over Dictionary Items
+#
+# Define an empty list named home_town_items.
+# Use a for loop to iterate over 
+# the key: value pairs in the home_town dictionary and append 
+# a string with the following format to home_town_items: "<key> = <value>"
+
+def list_home_town_items():
+  home_town_items = []
+  home_town = {
+    "city": "Davenport" ,
+    "state": "Iowa",
+    "population": 100938 ,
+  }
+
+  for key , val in home_town.items():
+    home_town_items.append(f"home_town_items:{key} = {val}")
+  return home_town_items
+
+
+
+# Call the function and print the result
+print('Exercise 5:', list_home_town_items())
+
+
+
+# Exercise 6: Celebrate Students
+#
+# Using the list of students and a list comprehension, 
+# assign to a variable named awesome_students a new list containing strings.
+# For example: ["Tina is awesome!", "Fred is awesome!", "Wilma is awesome!"]
+
+def create_awesome_students():
+  students = ["peri", "tia", "randall"]
+  awesome_students = [f"{student} is awesome!" for student in students]
+  return awesome_students
+
+# Call the function and print the result
+print('Exercise 6:', create_awesome_students())
